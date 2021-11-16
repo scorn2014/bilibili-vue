@@ -21,8 +21,8 @@ jobs:
         run: |
           docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
           docker build -t bilibili-vue:latest . 
-          docker tag bilibili-vue registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest
-          docker push registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest # 推送
+          docker tag bilibili-vue registry.cn-hangzhou.aliyuncs.com/htf_name/bilili-vue:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/htf_name/bilili-vue:latest # 推送
       - name: ssh docker login
         uses: appleboy/ssh-action@master
         with:
