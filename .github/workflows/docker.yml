@@ -1,6 +1,7 @@
 name: Docker Test # Actions名称
 
-on: [push] # 执行时机
+on: 
+  workflow_dispatch:
 
 jobs:
 
